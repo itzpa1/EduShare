@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Login from './pages/Login'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import AllBooks from './pages/AllBooks'
 import SignUp from './pages/SignUp'
 import Cart from './pages/Cart'
