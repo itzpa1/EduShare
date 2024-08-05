@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* font */
+
+@font-face {
+    font-family: "Hassar", sans-serif;
+    src: url("./assets/HussarBold-7mRE.otf");
+}
+
+.hassar {
+    font-family: "Hassar", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Custom css */
+
+:root {
+    --primary_bg: #ffffff;
+    --secondary_bg: #6C5DD2;
+    --accent_bg: rgba(108, 93, 210, 0.2);
+    --text_color: #ffffff;
+    --input-text: #000;
+    --filter: invert(90%);
+    --shadow: rgba(0,0,0, 0.5);
+}
+
+.dark {}
+
+.navbar {
+    background: var(--primary_bg);
+}
+
+.navbar .loginBtn {
+    /* background: var(--secondary_bg); */
+    color: var(--secondary_bg);
+    border: 1px solid var(--secondary_bg);
+    transition: 0.2s;
+}
+
+.navbar .loginBtn:hover {
+    color: var(--primary_bg);
+    background: var(--secondary_bg);
+    border: 1px solid var(--primary_bg);
+
+}
+
+.navbar .signUpBtn {
+    color: #ffffff;
+    background: var(--secondary_bg);
+    border: 1px solid var(--primary_bg);
+}
+
+.navbar .signUpBtn:hover {
+    color: var(--secondary_bg);
+    background: var(--primary_bg);
+    border: 1px solid var(--secondary_bg);
+}
+
+.navbar .links {
+    color: var(--secondary_bg);
+}
+
+.navbar .links a {
+    transition: 0.2s;
+}
+
+.navbar .links a:hover {
+    text-decoration: underline;
+}
+
+.navbar .links a:focus {
+    color: var(--accent_bg);
+}
+
+.navbar .search_box {
+    color: var(--input-text);
+}
+
+.navbar .search_box img {
+    filter: drop-shadow(1px 4px 4px);
+}
+
+.recentAdded .title h1 {
+    color: var(--input-text);
+}
+
+.recentAdded .title hr {
+    background: var(--accent_bg);
+}
+
+.recentAdded .view_all {
+    color: var(--input-text);
+    /* -webkit-text-stroke: 1px red; */
+    background: var(--accent_bg);
+    border: 1px solid var(--accent_bg);
+    transition: 0.2s;
+}
+
+.recentAdded .view_all:hover {
+    background: var(--primary_bg);
+    border: 1px solid var(--secondary_bg);
+    color: var(--secondary_bg);
+}
+
+.book_box .buy_btn {
+    border: 2px solid var(--primary_bg);
+    transition: 0.2s;
+}
+
+.book_box .buy_btn:hover {
+    border: 2px solid var(--primary_bg);
+    background: transparent;
+    color: var(--primary_bg);
+}
+
+.book_card {
+    background-image: linear-gradient(var(--accent_bg), transparent);
+    aspect-ratio: 9/16;
+    border: 1px solid var(--accent_bg);
+}
+
+.heart {
+    transition: 0.2s;
+    background: var(--primary_bg);
+}
+
+.book_card .book_format {
+    background: var(--primary_bg);
+    color: var(--secondary_bg);
+}
+
+.book_card:hover >.heart,
+.bookImg:hover >.heart {
+    display: block;
+}
+
+.book_card .imgBox {
+    border: 1px solid var(--accent_bg);
+    aspect-ratio: 3/4;
+}
+
+.book_card .cartBtn {
+    background: var(--secondary_bg);
+    color: var(--text_color);
+    transition: 0.2s;
+}
+
+.book_card .cartBtn:hover {
+    background: var(--primary_bg);
+    color: var(--secondary_bg);
+}
+
+.latestBlogs .title h1 {
+    color: var(--input-text);
+}
+
+.latestBlogs .title hr {
+    background: var(--accent_bg);
+}
+
+.latestBlogs .view_all {
+    color: var(--input-text);
+    background: var(--accent_bg);
+    border: 1px solid var(--accent_bg);
+    transition: 0.2s;
+}
+
+.latestBlogs .view_all:hover {
+    background: var(--primary_bg);
+    border: 1px solid var(--secondary_bg);
+    color: var(--secondary_bg);
+}
+
+.blog_card {
+    background-image: linear-gradient(var(--accent_bg), transparent);
+    border: 1px solid var(--accent_bg);
+}
+
+.blog_card {
+    background: var(--primary_bg);
+    border: 1px solid var(--accent_bg);
+}
+
+.blog_card .imgBox {
+    border: 1px solid var(--accent_bg);
+}
+
+.blog_card .blog_metaInfo {
+    color: var(--secondary_bg);
+}
+
+.blog_card .low a {
+    color: var(--secondary_bg);
+}
+
+.viewBookInfo .bookImg {
+    background-image: linear-gradient(var(--accent_bg), transparent);
+    border: 1px solid var(--accent_bg);
+}
+
+.viewBookInfo .bookInfo {
+    background: var(--accent_bg);
+    border: 1px solid var(--accent_bg);
+}
+
+.viewBookInfo .bookInfo .bookName {
+    position: relative;
+    color: var(--input-text);
+}
+
+.viewBookInfo .bookInfo .bookName::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 60%;
+    background: var(--input-text);
+}
+
+.viewBookInfo .bookImg img {
+    aspect-ratio: 3/4.5;
+    border-color: var(--primary_bg);
+}
+
+.bookImg .cartBtn {
+    background: var(--secondary_bg);
+    color: var(--text_color);
+    transition: 0.2s;
+}
+
+.bookImg .cartBtn:hover {
+    background: var(--primary_bg);
+    color: var(--secondary_bg);
+}
+
+.viewBookInfo .bookMeta .form {
+    background: var(--primary_bg);
+    color: var(--secondary_bg);
+}
+
+.viewBookInfo .bookMeta .lang {
+    background: var(--secondary_bg);
+    color: var(--primary_bg);
+}
+
+.viewBookInfo .desc p {
+    color: var(--input-text);
+}
+
+.viewBookInfo .publication p {
+    color: var(--input-text);
+}
+
+.viewBookInfo .publication span {
+    color: var(--secondary_bg);
+}
+
+.signUp .greetBox, 
+.logIn .greetBox {
+    color: var(--primary_bg);
+}
+
+.signUp .signUpBox, 
+.logIn .signUpBox {
+    background: var(--primary_bg);
+    border: 1px solid var(--accent_bg);
+}
+
+.signUp .signUpBox .title, 
+.logIn .signUpBox .title {
+    color: var(--input-text);
+}
+
+.signUp .signUpBox .form input,
+select,
+.logIn .signUpBox .form input,
+.contactUs input,
+.contactUs textarea {
+    padding: 4px;
+    border-radius: 0.25rem;
+    outline: none;
+    border: 2px solid var(--accent_bg);
+}
+
+.signUp .signUpBox .form input[type=text]:focus,
+select:focus,
+.logIn .signUpBox .form input[type=text]:focus,
+.contactUs input:focus,
+.contactUs textarea:focus {
+    border: 2px solid var(--secondary_bg);
+}
+
+.signUp select{
+    color: var(--primary_bg);
+    background: var(--secondary_bg);
+}
+
+select option{
+    color: var(--secondary_bg);
+    background: var(--primary_bg);
+}
+
+.signUp .signUpBox .form input:hover,
+select:focus,
+.logIn .signUpBox .form input:hover,
+.contactUs textarea:hover,
+.contactUs input:hover {
+    border: 2px solid var(--secondary_bg);
+}
+
+.signUp .signUpBox input[type=password]{
+    width: 50%;
+}
+
+.signUp .submitBtn,
+.logIn .submitBtn,
+.contactUs .submitBtn
+ {
+    background: var(--secondary_bg);
+    color: var(--primary_bg);
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.signUp .submitBtn:hover,
+.logIn .submitBtn:hover,
+.contactUs .submitBtn:hover
+ {
+    border: 2px solid var(--secondary_bg);
+    background: var(--primary_bg);
+    color: var(--secondary_bg);
+}
+
+.or p {
+    color: var(--secondary_bg);
+}
+
+.signUp .or hr,
+.logIn .or hr
+ {
+    background: var(--accent_bg);
+    height: 2px;
+}
+
+
+.signUp .consent {
+    color: var(--input-text);
+}
+
+.signUp .consent input {
+    background: var(--secondary_bg);
+    outline: var(--secondary_bg);
+}
+
+.signUp .consent a {
+    font-weight: 600;
+}
+
+.signUp .loginBtn h1,
+.logIn .loginBtn h1
+ {
+    color: var(--input-text);
+}
+
+.otherBtn a:hover{
+    color: var(--secondary_bg);
+}
+
+/* .otherBtn a:hover > #p{
+    transform: scale(0);
+} */
+
+.aboutUs .header{
+    background: var(--accent_bg);
+}
+
+.aboutUs .ourGoal p span{
+    color: var(--secondary_bg);
+}
+
+.aboutUs .ourGoal .book1{
+    animation: hover 1s infinite linear;
+    filter: drop-shadow(1px 1px 10px var(--accent_bg));
+}
+
+.aboutUs .name h1{
+    color: var(--input-text);
+}
+
+.aboutUs .name hr{
+    background: var(--accent_bg);
+}
+
+.aboutUs .name p{
+    color: var(--secondary_bg);
+}
+
+.aboutUs .social a{
+    background: var(--secondary_bg);
+    color: var(--primary_bg);
+}
+
+.aboutUs .user .social{
+    transition: 0.5s;
+}
+
+.aboutUs .user:hover > .social{
+    opacity: 1;
+}
+
+input, textarea{
+    transition: 0.2s;
+}
+
+.contactUs .container{
+    background: var(--input-text);
+}
+
+.contactUs .container .messageBox{
+    background: var(--primary_bg);
+}
+
+.form,
+.messageBox,
+.container{
+    box-shadow: 0px 4px 6px -1px var(--shadow);
+}
+
+
+
+.contactUs .mapBox iframe{
+    filter: var(--filter);
+}
+
+
+
+.footer {
+    background: var(--secondary_bg);
+}
+
+.footer .left-footer,
+.subscribe_box,
+.payment_box {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer .upper,
+.subscribe_box h1,
+.lower {
+    color: #ffffff;
+}
+
+.footer .social_icons a {
+    color: var(--secondary_bg);
+}
+
+.footer .social_icons a:hover {
+    background-image: radial-gradient(circle, var(--accent_bg), transparent);
+    color: var(--primary_bg);
+}
+
+.footer .input_box button{
+    border: 2px solid var(--primary_bg);
+}
+
+.footer .input_box input:focus{
+    border: 2px solid var(--primary_bg);
+}
+
+.footer .input_box input:hover{
+    border: 2px solid var(--primary_bg);
+}
+
+
+@keyframes hover {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
