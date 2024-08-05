@@ -18,14 +18,14 @@ const App = () => {
         <Router>
           <Navbar />
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/all-books" element={<AllBooks />} />
-            <Route exact path="/cart" element={<Cart />} />
-            <Route exact path="/profile" element={<Profile />} />
-            <Route exact path="/LogIn" element={<Login />} />
-            <Route exact path="/SignUp" element={<SignUp />} />
-            <Route exact path="/about-us" element={<AboutUs />} />
-            <Route exact path="/coming-soon" element={<ComingSoon />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/all-books" element={<AllBooks />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/LogIn" element={<Login />} />
+            <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/coming-soon" element={<ComingSoon />} />
             <Route path="view-book-details/" element={<ViewBookDetails />} />
           </Routes>
           <Footer />
