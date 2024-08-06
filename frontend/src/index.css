@@ -90,7 +90,7 @@ body {
 }
 
 .navbar .search_box img {
-    filter: drop-shadow(1px 4px 4px);
+    filter: drop-shadow(1px 1px 2px);
 }
 
 .recentAdded .title h1 {
@@ -117,13 +117,28 @@ body {
 
 .book_box .buy_btn {
     border: 2px solid var(--primary_bg);
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .book_box .buy_btn:hover {
     border: 2px solid var(--primary_bg);
     background: transparent;
     color: var(--primary_bg);
+}
+
+
+.book_box .buy_btn:hover > .oPrice {  /* change*/
+    display: none;
+}
+
+.book_img img{
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.book_img img:hover{
+    transform: scale(1.2);
 }
 
 .book_card {
@@ -495,5 +510,12 @@ input, textarea{
     }
     100%{
         transform: translateY(0px);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nav_links .links{
+        display: none;
     }
 }

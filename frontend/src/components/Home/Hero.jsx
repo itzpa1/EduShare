@@ -28,8 +28,8 @@ const Home = () => {
               <p className='font-semibold'>Buy</p>
               <div className="price flex font-bold items-center text-xl">
                 Rs
-                <h1 className='font-normal px-1 text-xs line-through'>00</h1>
-                <h1 className=''>00</h1>
+                <h1 className='oPrice font-normal px-1 text-xs line-through'>00</h1>
+                <h1 className='dPrice'>00</h1>
               </div>
             </Link>
 
